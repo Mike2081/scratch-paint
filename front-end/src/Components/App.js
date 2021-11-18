@@ -1,10 +1,11 @@
 
 import '../Styles/App.css';
+import Holder from './Holder';
 
 function App() {
   return (
-    <div className="App">
-     hello world
+    <div>
+     <Holder/>
     </div>
   );
 }
