@@ -1,4 +1,4 @@
-import "../Styles/nav.css";
+import "../Styles/Navbar/nav.css";
 
 function Navbar() {
   return (
@@ -9,6 +9,14 @@ function Navbar() {
         className="nav__logo"
       />
       <h3 className="nav__name">App Name</h3>
+      <button
+        className="nav-toggle"
+        aria-label="open navigation"
+        type="button"
+        onClick={console.log("click")}
+      >
+        <span className="hamburger"></span>
+      </button>
       <ul className="row nav__list">
         <li className="nav__item nav__item--highlight">
           <a href="/" className="nav__link nav__link--highlight">
