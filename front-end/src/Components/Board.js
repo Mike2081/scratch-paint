@@ -12,7 +12,7 @@ function Board() {
 
   return (
     <canvas
-      className="board"
+      id="board"
       onMouseDown={startDrawing}
       onMouseUp={doneDrawing}
       onMouseMove={draw}

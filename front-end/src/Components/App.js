@@ -7,9 +7,9 @@ import Holder from "./Holder";
 function App() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <HeroSection />
-      <Features />
+      <Features /> */}
       <Holder />
     </div>
   );

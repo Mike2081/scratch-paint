@@ -1,5 +1,5 @@
-.board {
-  width: 142%;
+#board {
+  width: calc(100% - 123px);
   background-color: white;
   margin: 2px 32px;
 }
