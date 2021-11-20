@@ -1,5 +1,10 @@
+.main {
+  margin-top: 2.5rem;
+}
+
 .main__title {
-  margin: 0;
+  margin-bottom: 1.75rem;
+  line-height: 4.375rem;
   font-family: "Playfair Display", serif;
   font-size: 4.5rem;
   color: #fff;
@@ -7,8 +12,8 @@
 
 .main__subtitle {
   margin-top: 0;
+  margin-bottom: 1.25rem;
   font-size: 1.125rem;
-  width: 75%;
   color: #898a8e;
 }
 
@@ -22,7 +27,6 @@
 }
 
 .main__img {
-  height: 28.125rem;
-  width: 28.125rem;
+  display: none;
 }
 /*# sourceMappingURL=hero_section.css.map */
