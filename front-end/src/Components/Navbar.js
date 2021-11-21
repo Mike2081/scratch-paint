@@ -1,32 +1,37 @@
-import "../Styles/nav.css";
+import "../Styles/NavbarCSS/nav.css";
+import logo from "../Images/favicon.svg";
+// import mobileLogo from "../Images/scratch-paint.png";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="container row nav">
-      <img
-        src="https://via.placeholder.com/60"
-        alt="icon"
-        className="nav__logo"
-      />
-      <h3 className="nav__name">App Name</h3>
-      <ul className="row nav__list">
-        <li className="nav__item nav__item--highlight">
-          <a href="/" className="nav__link nav__link--highlight">
-            Home
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="#features" className="nav__link">
-            Features
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="#developers" className="nav__link">
-            Developers
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div className="container flex nav">
+      {/* START Please help me with this for navigation */}
+      {/* <button className="nav__button" aria-label="open navigation">
+        <span className="nav__hamburger"></span>
+      </button>
+      <img src={mobileLogo} alt="logo" className="mobileLogo" /> */}
+      {/* END */}
+
+      <div className="navHolder__logoHolder">
+        <img src={logo} className="navHolder__logoHolder__logo" alt="icon" />
+        <h2 className="navHolder__logoHolder__logoTitle">Scratch Paint</h2>
+      </div>
+      <div className="navHolder__buttonHolder">
+        <Link
+          to="/"
+          className="navHolder__buttonHolder__buttons navHolder__buttonHolder__buttons--highlight"
+        >
+          Home
+        </Link>
+        <Link to="/paint" className="navHolder__buttonHolder__buttons">
+          Paint
+        </Link>
+        <Link to="/team" className="navHolder__buttonHolder__buttons">
+          Team
+        </Link>
+      </div>
+    </div>
   );
 }
 

@@ -1,0 +1,132 @@
+.nav {
+  .navHolder {
+    margin-top: 1.0625rem;
+    background-color: #000000;
+    // height: 61px;
+    display: flex;
+    // justify-content: space-between;
+    // position: fixed;
+    // width: 100%;
+    // z-index: 1;
+
+    &__logoHolder {
+      // width: 100%;
+      // margin: 0 auto;
+      color: white;
+      display: flex;
+      &__logo {
+        margin: 0;
+        height: 7.5rem;
+        width: 7.5rem;
+        // border-radius: 50%;
+        // height: 50px;
+        // margin: 5px 12px;
+      }
+      &__logoTitle {
+        margin: auto 0;
+        font-family: megrim;
+        font-size: 2.5rem;
+        // font-weight: 700;
+        // font-size: 17px;
+      }
+    }
+    &__buttonHolder {
+      margin-left: auto;
+
+      // &__buttons + &__buttons {
+      //   margin-left: 4.75rem;
+      // }
+
+      &__buttons {
+        font-family: Quicksand, sans-serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.5625rem;
+        color: #898a8e;
+        text-decoration-line: none;
+
+        // background-color: black;
+        // border: none;
+        // font-weight: 900;
+        // margin: 20px 30px;
+      }
+      &__buttons--highlight {
+        color: #fff;
+      }
+    }
+  }
+  &__button {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #000;
+    color: white;
+    transition: opacity 250ms ease;
+
+    position: absolute;
+
+    &:focus,
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &__hamburger {
+    width: 50%;
+    position: relative;
+
+    &,
+    &::before,
+    &::after {
+      display: block;
+      margin: 0 auto;
+      height: 3px;
+      background: white;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+    }
+
+    &::before {
+      transform: translateY(-6px);
+    }
+
+    &::after {
+      transform: translateY(3px);
+    }
+  }
+  // .mobileLogo,
+  // .nav__button {
+  //   display: none; // visibility: hidden;
+  // }
+  @media (max-width: 30rem) {
+    .mobileLogo {
+      width: 100%;
+      visibility: visible;
+      position: relative;
+      left: 35.51%;
+    }
+
+    .navHolder__logoHolder__logo,
+    .navHolder__logoHolder__logoTitle,
+    .navHolder__buttonHolder {
+      display: none;
+    }
+  }
+}
+@media (max-width: 30rem) {
+  .flex {
+    margin: 2rem;
+  }
+}
+
+// i dont know why tf is not working on line 34
+.navHolder__buttonHolder__buttons + .navHolder__buttonHolder__buttons {
+  margin-left: 5rem;
+}
