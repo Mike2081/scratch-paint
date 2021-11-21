@@ -1,12 +1,8 @@
-import React from 'react'
-import "../Styles/Team.css"
+import React from "react";
+import "../Styles/TeamCSS/Team.css";
 
 function Team() {
-    return (
-        <div className="Team">
-            Team page test message
-        </div>
-    )
+  return <div className="Team">Team page test message</div>;
 }
 
-export default Team
+export default Team;

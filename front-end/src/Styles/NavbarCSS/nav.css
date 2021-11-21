@@ -1,0 +1,114 @@
+.nav .navHolder {
+  margin-top: 1.0625rem;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .navHolder__logoHolder {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .navHolder__logoHolder__logo {
+  margin: 0;
+  height: 7.5rem;
+  width: 7.5rem;
+}
+
+.nav .navHolder__logoHolder__logoTitle {
+  margin: auto 0;
+  font-family: megrim;
+  font-size: 2.5rem;
+}
+
+.nav .navHolder__buttonHolder {
+  margin-left: auto;
+}
+
+.nav .navHolder__buttonHolder__buttons {
+  font-family: Quicksand, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5625rem;
+  color: #898a8e;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.nav .navHolder__buttonHolder__buttons--highlight {
+  color: #fff;
+}
+
+.nav__button {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #000;
+  color: white;
+  -webkit-transition: opacity 250ms ease;
+  transition: opacity 250ms ease;
+  position: absolute;
+}
+
+.nav__button:focus, .nav__button:hover {
+  opacity: 0.75;
+}
+
+.nav__hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.nav__hamburger, .nav__hamburger::before, .nav__hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.nav__hamburger::before, .nav__hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.nav__hamburger::before {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.nav__hamburger::after {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+@media (max-width: 30rem) {
+  .nav .mobileLogo {
+    width: 100%;
+    visibility: visible;
+    position: relative;
+    left: 35.51%;
+  }
+  .nav .navHolder__logoHolder__logo,
+  .nav .navHolder__logoHolder__logoTitle,
+  .nav .navHolder__buttonHolder {
+    display: none;
+  }
+}
+
+@media (max-width: 30rem) {
+  .flex {
+    margin: 2rem;
+  }
+}
+
+.navHolder__buttonHolder__buttons + .navHolder__buttonHolder__buttons {
+  margin-left: 5rem;
+}
+/*# sourceMappingURL=nav.css.map */
