@@ -1,0 +1,32 @@
+.bottom {
+  background-image: url("../third_stroke.png");
+  background-repeat: no-repeat;
+  background-position-y: 23rem;
+  img {
+    margin-top: 1.75rem;
+    margin-left: auto;
+  }
+
+  hr {
+    margin: 0 2.5rem;
+  }
+
+  footer {
+    padding: 1rem;
+
+    p {
+      margin: 0 auto;
+      font-family: Quicksand;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.875rem;
+    }
+
+    a img {
+      margin: 0;
+    }
+    a + a {
+      margin-left: 2.25rem;
+    }
+  }
+}

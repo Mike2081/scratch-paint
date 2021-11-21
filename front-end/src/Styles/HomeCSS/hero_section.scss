@@ -1,0 +1,57 @@
+.main {
+  &__description {
+    margin-top: 6.25rem;
+    max-width: 33rem;
+  }
+  &__title {
+    width: 18.375rem;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    color: #4cc9f0;
+    line-height: 3.375rem;
+  }
+
+  &__subtitle {
+    margin-top: 0.625rem;
+    margin-bottom: 1.875rem;
+    max-width: 29rem;
+    color: #fff;
+
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.875rem;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 1.0625rem 12.5rem;
+    background: #4038ff;
+    border-style: none;
+    color: #fff;
+
+    font-family: Roboto;
+    font-size: 1.875rem;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 2.625rem;
+    text-decoration: none;
+  }
+
+  &__img {
+    margin-left: auto;
+    margin-top: auto;
+    max-width: 100%;
+    width: 33rem;
+    height: 23rem;
+  }
+  @media (max-width: 30rem) {
+    &__button,
+    &__img {
+      display: none;
+    }
+  }
+}
