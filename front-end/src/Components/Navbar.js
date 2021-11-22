@@ -1,19 +1,40 @@
+import React, {useState} from 'react';
 import "../Styles/NavbarCSS/nav.css";
 import logo from "../Images/favicon.svg";
-// import mobileLogo from "../Images/scratch-paint.png";
+import * as FaIcons from "react-icons/fa"
 import { Link } from "react-router-dom";
+import { SidebarData } from "./SidebarData";
 
 function Navbar() {
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => setSidebar(!sidebar);
   return (
     <div className="container flex nav">
-      {/* START Please help me with this for navigation */}
-      {/* <button className="nav__button" aria-label="open navigation">
-        <span className="nav__hamburger"></span>
-      </button>
-      <img src={mobileLogo} alt="logo" className="mobileLogo" /> */}
-      {/* END */}
 
       <div className="navHolder__logoHolder">
+        <Link to="#" className="menu-bars">
+          <FaIcons.FaBars onClick={showSidebar}/> 
+        </Link>
+        <nav className={ sidebar ? "nav-menu active" : "nav-menu"}>
+          <ul className="nav-menu-items" onClick={showSidebar}>
+            <li className="navbar-toggle">
+              <Link to="#" className="menu-bars">
+                <FaIcons.FaWindowClose/>
+              </Link>
+            </li>
+            {SidebarData.map((item, index) => {
+               return (
+                <li key={index} className={item.cName}>
+                  <Link to={item.path}>
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </Link>
+                </li> 
+               )
+            })}
+          </ul>
+        </nav>  
         <img src={logo} className="navHolder__logoHolder__logo" alt="icon" />
         <h2 className="navHolder__logoHolder__logoTitle">Scratch Paint</h2>
       </div>

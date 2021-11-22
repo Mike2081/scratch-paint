@@ -28,8 +28,8 @@ function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/paint" element={<Holder />} />
           </Routes>
-          <Features />
-          <Footer />
+          {/* <Features /> */}
+          {/* <Footer /> */}
         </Fade>
       </Router>
     </div>
