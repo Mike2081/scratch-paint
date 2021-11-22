@@ -27,7 +27,6 @@
   }
 
   &__button {
-    width: 100%;
     padding: 1.0625rem 12.5rem;
     background: #4038ff;
     border-style: none;
@@ -39,6 +38,9 @@
     font-style: normal;
     line-height: 2.625rem;
     text-decoration: none;
+    @media (max-width: 78.6875rem) {
+      padding: 17px 100px;
+    }
   }
 
   &__img {
@@ -48,7 +50,21 @@
     width: 33rem;
     height: 23rem;
   }
-  @media (max-width: 30rem) {
+  @media (max-width: 61rem) {
+    .container {
+      margin: 1.25rem;
+    }
+    &__description {
+      margin-top: 2.5rem;
+      margin-inline: auto;
+    }
+    &__subtitle {
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 30px;
+    }
     &__button,
     &__img {
       display: none;

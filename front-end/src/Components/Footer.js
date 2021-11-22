@@ -1,5 +1,5 @@
 import "../Styles/FooterCSS/footer.css";
-import bee from "../Images/bee.svg";
+import bee from "../Images/bee.png";
 import github from "../Images/socials/github.svg";
 import figma from "../Images/socials/figma.svg";
 export default function Footer() {
@@ -8,7 +8,7 @@ export default function Footer() {
       <img src={bee} alt="bee" />
       <hr />
 
-      <footer className="container flex">
+      <footer className="flex">
         <p>© "name" Development. All rights reserved.</p>
         <a
           href="https://github.com/Mike2081/shareable-whiteboard"

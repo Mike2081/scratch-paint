@@ -1,11 +1,18 @@
 .features {
   justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 65.9375rem) {
+    justify-content: space-around;
+  }
 }
 .feature__heading {
   margin-top: 6.25rem;
   font-family: Quicksand;
   font-size: 3rem;
   font-weight: 300;
+  @media (max-width: 65.9375rem) {
+    margin-top: 4.125rem;
+  }
 }
 
 .feature {

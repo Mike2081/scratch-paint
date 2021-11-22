@@ -1,7 +1,7 @@
 import "../Styles/FeaturesCSS/features.css";
 export default function Features() {
   return (
-    <div className="container">
+    <div>
       <h2 className="feature__heading">Features</h2>
       <div className="flex features">
         <div className="feature">
