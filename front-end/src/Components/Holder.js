@@ -5,8 +5,8 @@ import { EraseButton } from "./EraseButton";
 
 function Holder() {
   return (
-    <div className="holder">
-      <div>
+    <div>
+      <div className="container">
         <input type="color" />
         <EraseButton />
       </div>
