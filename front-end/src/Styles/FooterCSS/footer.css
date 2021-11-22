@@ -7,10 +7,7 @@
 .bottom img {
   margin-top: 1.75rem;
   margin-left: auto;
-}
-
-.bottom hr {
-  margin: 0 2.5rem;
+  max-width: 100%;
 }
 
 .bottom footer {

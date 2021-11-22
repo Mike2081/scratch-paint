@@ -26,7 +26,6 @@
 }
 
 .main__button {
-  width: 100%;
   padding: 1.0625rem 12.5rem;
   background: #4038ff;
   border-style: none;
@@ -39,6 +38,12 @@
   text-decoration: none;
 }
 
+@media (max-width: 78.6875rem) {
+  .main__button {
+    padding: 17px 100px;
+  }
+}
+
 .main__img {
   margin-left: auto;
   margin-top: auto;
@@ -47,7 +52,21 @@
   height: 23rem;
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 61rem) {
+  .main .container {
+    margin: 1.25rem;
+  }
+  .main__description {
+    margin-top: 2.5rem;
+    margin-inline: auto;
+  }
+  .main__subtitle {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
   .main__button, .main__img {
     display: none;
   }

@@ -2,6 +2,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 65.9375rem) {
+  .features {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .feature__heading {
@@ -9,6 +18,12 @@
   font-family: Quicksand;
   font-size: 3rem;
   font-weight: 300;
+}
+
+@media (max-width: 65.9375rem) {
+  .feature__heading {
+    margin-top: 4.125rem;
+  }
 }
 
 .feature {
