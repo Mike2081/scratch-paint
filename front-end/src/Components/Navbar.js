@@ -5,7 +5,6 @@ import * as FaIcons from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import { NavLink } from "react-router-dom";
-
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 

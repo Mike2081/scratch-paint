@@ -9,7 +9,7 @@ export default function Footer() {
       <hr />
 
       <footer className="flex">
-        <p>© "name" Development. All rights reserved.</p>
+        <p>© Paint Scratch Development. All rights reserved.</p>
         <a
           href="https://github.com/Mike2081/shareable-whiteboard"
           rel="noreferrer"
