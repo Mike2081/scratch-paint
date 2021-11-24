@@ -4,6 +4,7 @@ import logo from "../Images/favicon.svg";
 import * as FaIcons from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
+import Holder from "./Holder";
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);

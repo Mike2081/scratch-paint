@@ -78,7 +78,7 @@ function Holder() {
       style={{
           border: "7px solid dimgrey"
         }}
-        width={500}
+        width={400}
         height={400}
         ref={canvasRef}
         onMouseDown={onMouseDown}
