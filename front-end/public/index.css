@@ -30,8 +30,9 @@ body {
   background-color: #000;
   color: #fff;
 
-  background-image: url("./first_stoke.png");
-  background-position: left -2.2rem;
+  background-image: url("./first_stoke.png"), url("./second_stroke.svg"),
+    url("./third_stroke.png");
+  background-position: left -2.2rem, right center, bottom left;
   background-repeat: no-repeat;
 }
 
@@ -75,4 +76,17 @@ select {
 .flex {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 60.9375rem) {
+  body {
+    background-image: url("./first_stoke.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  .features {
+    background-image: url("./stroke_me.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

@@ -1,0 +1,121 @@
+.grid + .grid {
+  margin-block: 1.875rem;
+}
+
+.grid {
+  margin-top: 3.125rem;
+  max-width: 50.125rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "image name name"
+    "image info info"
+    ". . .";
+
+  .image {
+    grid-area: image;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    margin: auto;
+  }
+  .name {
+    grid-area: name;
+
+    h2 {
+      margin-bottom: 1.125rem;
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 3.75rem;
+    }
+    p {
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  .info {
+    grid-area: "info";
+
+    p {
+      font-weight: normal;
+      font-size: 1rem;
+    }
+    p + p {
+      margin-top: 1rem;
+    }
+    .socials {
+      flex-wrap: wrap;
+      font-size: 0.875rem;
+      text-decoration: none;
+
+      .flex a + a {
+        margin-left: 29px;
+      }
+
+      a {
+        margin-top: 0.875rem;
+        color: #fff;
+        text-decoration: none;
+
+        img {
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 60.9375rem) {
+    .image {
+      clip-path: none;
+      max-width: 10.4375rem;
+      max-height: 10.4375rem;
+      margin: 0;
+    }
+
+    .name {
+      h2 {
+        font-size: 1.875rem;
+        line-height: 1.125rem;
+      }
+    }
+    .info {
+      grid-column-start: 1;
+      grid-column-end: -1;
+      grid-area: "";
+      .socials {
+        .flex {
+          margin: auto;
+        }
+      }
+    }
+  }
+  @media (max-width: 43.75rem) {
+    .image {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      margin: auto;
+    }
+    .name {
+      text-align: center;
+      grid-column-start: 1;
+      grid-row-start: 3;
+      grid-row-end: -1;
+
+      h2 {
+        margin-block: 1.125rem;
+        line-height: 1.875rem;
+      }
+    }
+    .info {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+    .socials {
+      a img {
+        max-width: 2.125rem;
+      }
+      a + a {
+        margin-left: 3.375rem;
+      }
+    }
+  }
+}

@@ -4,11 +4,18 @@ import logo from "../Images/favicon.svg";
 import * as FaIcons from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
-
+import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+
+  const location = useLocation();
+  //destructuring pathname from location
+  const { pathname } = location;
+  //Javascript split method to get the name of the path in array
+  const splitLocation = pathname.split("/");
   return (
     <div className="container flex nav">
       <Link to="#" className="menu-bars">
@@ -38,18 +45,30 @@ function Navbar() {
         <h2 className="navHolder__logoHolder__logoTitle">Scratch Paint</h2>
       </div>
       <div className="navHolder__buttonHolder">
-        <Link
+        <NavLink
+          className="navHolder__buttonHolder__buttons"
+          exact
+          activeclassname="active"
           to="/"
-          className="navHolder__buttonHolder__buttons navHolder__buttonHolder__buttons--highlight"
         >
           Home
-        </Link>
-        <Link to="/paint" className="navHolder__buttonHolder__buttons">
+        </NavLink>
+        <NavLink
+          className="navHolder__buttonHolder__buttons"
+          exact
+          activeclassname="active"
+          to="/paint"
+        >
           Paint
-        </Link>
-        <Link to="/team" className="navHolder__buttonHolder__buttons">
+        </NavLink>
+        <NavLink
+          className="navHolder__buttonHolder__buttons"
+          exact
+          activeclassname="active"
+          to="/team"
+        >
           Team
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

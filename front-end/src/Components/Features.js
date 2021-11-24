@@ -1,7 +1,8 @@
 import "../Styles/FeaturesCSS/features.css";
+import Fade from "react-reveal/Fade";
 export default function Features() {
   return (
-    <div>
+    <Fade bottom>
       <h2 className="feature__heading">Features</h2>
       <div className="flex features">
         <div className="feature">
@@ -25,6 +26,6 @@ export default function Features() {
           </p>
         </div>
       </div>
-    </div>
+    </Fade>
   );
 }

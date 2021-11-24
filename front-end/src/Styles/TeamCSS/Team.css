@@ -1,1 +1,134 @@
-/* No CSS *//*# sourceMappingURL=Team.css.map */
+.grid + .grid {
+  margin-block: 1.875rem;
+}
+
+.grid {
+  margin-top: 3.125rem;
+  max-width: 50.125rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "image name name" "image info info" ". . .";
+}
+
+.grid .image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: image;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin: auto;
+}
+
+.grid .name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: name;
+}
+
+.grid .name h2 {
+  margin-bottom: 1.125rem;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.75rem;
+}
+
+.grid .name p {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.grid .info {
+  grid-area: "info";
+}
+
+.grid .info p {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.grid .info p + p {
+  margin-top: 1rem;
+}
+
+.grid .info .socials {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.grid .info .socials .flex a + a {
+  margin-left: 29px;
+}
+
+.grid .info .socials a {
+  margin-top: 0.875rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.grid .info .socials a img {
+  height: 20px;
+}
+
+@media (max-width: 60.9375rem) {
+  .grid .image {
+    -webkit-clip-path: none;
+            clip-path: none;
+    max-width: 10.4375rem;
+    max-height: 10.4375rem;
+    margin: 0;
+  }
+  .grid .name h2 {
+    font-size: 1.875rem;
+    line-height: 1.125rem;
+  }
+  .grid .info {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: -1;
+    grid-area: "";
+  }
+  .grid .info .socials .flex {
+    margin: auto;
+  }
+}
+
+@media (max-width: 43.75rem) {
+  .grid .image {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+    margin: auto;
+  }
+  .grid .name {
+    text-align: center;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: -1;
+  }
+  .grid .name h2 {
+    margin-block: 1.125rem;
+    line-height: 1.875rem;
+  }
+  .grid .info {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .grid .socials a img {
+    max-width: 2.125rem;
+  }
+  .grid .socials a + a {
+    margin-left: 3.375rem;
+  }
+}
+/*# sourceMappingURL=Team.css.map */
