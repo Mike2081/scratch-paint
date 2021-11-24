@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACN,MAAM,EAAE,iBAAiB;EACzB,gBAAgB,EAAE,KAAK;EACvB,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,KAAK;CACd",
     "sources": [
         "Holder.scss"
     ],

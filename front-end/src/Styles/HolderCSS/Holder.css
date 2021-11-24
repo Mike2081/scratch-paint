@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=Holder.css.map */
+#canvas {
+  border: 6px solid dimgrey;
+  background-color: white;
+  position: relative;
+  bottom: 120px;
+}
+/*# sourceMappingURL=Holder.css.map */
