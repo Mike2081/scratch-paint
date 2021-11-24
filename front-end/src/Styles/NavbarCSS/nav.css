@@ -1,3 +1,9 @@
+@media (max-width: 60.9375rem) {
+  .nav {
+    margin-top: 2.6875rem;
+  }
+}
+
 .nav .navHolder {
   margin-top: 1.0625rem;
   background-color: #000000;
@@ -25,11 +31,29 @@
   font-size: 2.5rem;
 }
 
+@media (max-width: 60.9375rem) {
+  .nav .navHolder__logoHolder__logoTitle {
+    display: none;
+  }
+}
+
+@media (max-width: 60.9375rem) {
+  .nav .navHolder__logoHolder {
+    display: none;
+  }
+}
+
 .nav .navHolder__buttonHolder {
   margin-left: auto;
 }
 
 @media (max-width: 975px) {
+  .nav .navHolder__buttonHolder {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 43.75rem) {
   .nav .navHolder__buttonHolder {
     display: none;
   }
@@ -45,7 +69,7 @@
           text-decoration-line: none;
 }
 
-.nav .navHolder__buttonHolder__buttons--highlight {
+.nav .navHolder__buttonHolder .active {
   color: #fff;
 }
 
@@ -72,7 +96,7 @@
   margin-left: 1.25rem;
 }
 
-@media (min-width: 61rem) {
+@media (min-width: 43.75rem) {
   .menu-bars {
     display: none;
   }
@@ -128,7 +152,7 @@
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

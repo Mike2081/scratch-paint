@@ -4,12 +4,12 @@ import logo from "../Images/favicon.svg";
 import * as FaIcons from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
-import Holder from "./Holder";
-
+import { NavLink } from "react-router-dom";
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+
   return (
     <div className="container flex nav">
       <Link to="#" className="menu-bars">
@@ -39,18 +39,30 @@ function Navbar() {
         <h2 className="navHolder__logoHolder__logoTitle">Scratch Paint</h2>
       </div>
       <div className="navHolder__buttonHolder">
-        <Link
+        <NavLink
+          className="navHolder__buttonHolder__buttons"
+          exact
+          activeclassname="active"
           to="/"
-          className="navHolder__buttonHolder__buttons navHolder__buttonHolder__buttons--highlight"
         >
           Home
-        </Link>
-        <Link to="/paint" className="navHolder__buttonHolder__buttons">
+        </NavLink>
+        <NavLink
+          className="navHolder__buttonHolder__buttons"
+          exact
+          activeclassname="active"
+          to="/paint"
+        >
           Paint
-        </Link>
-        <Link to="/team" className="navHolder__buttonHolder__buttons">
+        </NavLink>
+        <NavLink
+          className="navHolder__buttonHolder__buttons"
+          exact
+          activeclassname="active"
+          to="/team"
+        >
           Team
-        </Link>
+        </NavLink>
       </div>
     </div>
   );
