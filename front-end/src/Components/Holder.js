@@ -1,10 +1,7 @@
 import React, { useRef, useState, useEffect, useCallback } from "react";
-import Board from "./Board";
 import "../Styles/HolderCSS/Holder.css";
-import { EraseButton } from "./EraseButton";
 
 function Holder() {
-  // const colours = ['red', 'green', 'yellow', 'blue', 'black'];
   const colours = [];
   const [widthSettings, setWidthSettings] = useState(0);
   const [pickedColor, setPickedColor] = useState(colours['']);
@@ -89,16 +86,6 @@ function Holder() {
         onMouseLeave={onMouseUp}
         onMouseMove={onMouseMove}
       />
-      {/* <select
-        value={pickedColor}
-        onChange={(e) => setPickedColor(e.target.value)}
-      >
-        {
-          colours.map(
-            colour => <option value={colour}>{colour}</option>
-          )
-        }
-      </select> */}
       <input type="color" value={pickedColor} onChange={(e) => setPickedColor(e.target.value)}/>
       <button onClick={clear}>Clear</button>
       <button onClick={download}>Download</button>
