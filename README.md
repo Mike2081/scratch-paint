@@ -34,7 +34,7 @@ desire.
 - CSS
 - NPM
 
-[Back To The Top](#read-me-template)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ---
 
@@ -73,7 +73,7 @@ cd front-end
 cd npm start
 ```
 
-[Back To The Top](#read-me-template)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ---
 
@@ -108,5 +108,4 @@ cd npm start
 - LinkedIn:
   [linkedin.com/in/abigail-sr](https://www.linkedin.com/in/abigail-sr/)
 - Email: [designs.asr@gmail.com](designs.asr@gmail.com)
-
-[Back To The Top](#read-me-template)
+<p align="right">(<a href="#top">back to top</a>)</p>
