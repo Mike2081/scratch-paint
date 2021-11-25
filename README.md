@@ -1,6 +1,6 @@
 # Scratch Paint
 
-![Project Image](project-image-url)
+![Project Image](github.com/Mike2081/scratch-paint/blob/master/front-end/src/Images/desktop-layout.png?raw=true)
 
 > This is a ReadMe template to help save you time and effort.
 
