@@ -10,8 +10,6 @@ Random Notes:
 
 ### Table of Contents
 
-You're sections headers will be used to reference location of destination.
-
 - [Description](#description)
 - [How To Use](#how-to-use)
 - [References](#references)
@@ -43,13 +41,14 @@ desire.
 Use the "eraser" button to clean up your mistaskes or use the "clear" button to
 start a new master piece.
 
-If you would like to save your art click the "download" button below.
+If you would like to save your art click the "download" button.
 
 # Installation
 
 ### Getting Started
 
-1. Hit "Code" and download the zip folder to download a copy of the repo
+1. Hit the green "Code" button on repo page and download the zip folder to
+   download a copy of the repo
 
 2. open zip folder
 
@@ -72,6 +71,8 @@ cd front-end
 ```html
 cd npm start
 ```
+
+7. Project should automatically start. Happy painting! : ]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
