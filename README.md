@@ -1,8 +1,8 @@
 # Scratch Paint
 
-![Project Image](./img/desktop-layout.jpeg)
+![Project Image](https://github.com/Mike2081/scratch-paint/blob/master/img/desktop-layout.jpg)
 
-> This is a ReadMe template to help save you time and effort.
+> "Your life is your canvas, create a divine masterpiece"
 
 ---
 
@@ -14,15 +14,14 @@ You're sections headers will be used to reference location of destination.
 - [How To Use](#how-to-use)
 - [References](#references)
 - [License](#license)
-- [Author Info](#author-info)
+- [Meet the Team](#author-info)
 
 ---
 
 ## Description
 
-Creating ReadMe's for your Github repository can be tedious. I hope this
-template can save you time and effort as well as provide you with some
-consistency across your projects.
+A Paint App where you can paint whatever you like, with whatever colour you
+desire.
 
 #### Technologies
 
@@ -34,6 +33,10 @@ consistency across your projects.
 ---
 
 ## How To Use
+
+Use the "eraser" button to clean up your mistaskes or use the "clear" button to
+start a new master piece. If you would like to save your art click the
+"download" button below.
 
 #### Installation
 
