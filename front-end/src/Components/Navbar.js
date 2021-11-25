@@ -1,39 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Styles/NavbarCSS/nav.css";
 import logo from "../Images/favicon.svg";
-import * as FaIcons from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { SidebarData } from "./SidebarData";
 import { NavLink } from "react-router-dom";
+import SideBar from "./SideBar";
 function Navbar() {
-  const [sidebar, setSidebar] = useState(false);
-
-  const showSidebar = () => setSidebar(!sidebar);
-
   return (
     <div className="container flex nav">
-      <Link to="#" className="menu-bars">
-        <FaIcons.FaBars onClick={showSidebar} />
-      </Link>
-      <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-        <ul className="nav-menu-items" onClick={showSidebar}>
-          <li className="navbar-toggle">
-            <Link to="#" className="menu-bars">
-              <FaIcons.FaTimes className="menu-bars__exit" />
-            </Link>
-          </li>
-          {SidebarData.map((item, index) => {
-            return (
-              <li key={index} className={item.cName}>
-                <Link to={item.path}>
-                  <span>{item.title}</span>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
-
+      <SideBar />
       <div className="navHolder__logoHolder">
         <img src={logo} className="navHolder__logoHolder__logo" alt="icon" />
         <h2 className="navHolder__logoHolder__logoTitle">Scratch Paint</h2>

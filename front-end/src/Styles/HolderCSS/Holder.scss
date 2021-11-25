@@ -1,7 +1,115 @@
 #canvas {
   border: 6px solid dimgrey;
   background-color: white;
-  position: relative;
-  bottom: 120px;
-  //   width: 100%;
+}
+
+.holderCanvas {
+  display: flex;
+  &__buttonContainer {
+    &__widthBox {
+    }
+    &__eraserBox {
+      &__eraserButtons {
+      }
+    }
+    &__colourBox {
+      width: 490px;
+      &__blue {
+        background-color: #0000ff;
+        height: 60px;
+        width: 100px;
+        border-radius: 26px;
+        border-color: white;
+        border-width: thick;
+        border-style: solid;
+        margin: 10px;
+      }
+      &__white {
+        background-color: #ffffff;
+        height: 60px;
+        width: 100px;
+        border-radius: 26px;
+        border-color: white;
+        border-width: thick;
+        border-style: solid;
+        margin: 10px;
+      }
+      &__black {
+        background-color: #000000;
+        height: 60px;
+        width: 100px;
+        border-radius: 26px;
+        border-color: white;
+        border-width: thick;
+        border-style: solid;
+        margin: 10px;
+      }
+      &__red {
+        background-color: #ff0000;
+        height: 60px;
+        width: 100px;
+        border-radius: 26px;
+        border-color: white;
+        border-width: thick;
+        border-style: solid;
+        margin: 10px;
+      }
+      &__green {
+        background-color: #00ff00;
+        height: 60px;
+        width: 100px;
+        border-radius: 26px;
+        border-color: white;
+        border-width: thick;
+        border-style: solid;
+        margin: 10px;
+      }
+      &__yellow {
+        background-color: #ffff00;
+        height: 60px;
+        width: 100px;
+        border-radius: 26px;
+        border-color: white;
+        border-width: thick;
+        border-style: solid;
+        margin: 10px;
+      }
+      &__orange {
+        background-color: #ffa500;
+        height: 60px;
+        width: 100px;
+        border-radius: 26px;
+        border-color: white;
+        border-width: thick;
+        border-style: solid;
+        margin: 10px;
+      }
+      &__purple {
+        background-color: #800080;
+        height: 60px;
+        width: 100px;
+        border-radius: 26px;
+        border-color: white;
+        border-width: thick;
+        border-style: solid;
+        margin: 10px;
+      }
+    }
+    &__downloadBox {
+      &__downloadbuttons {
+        height: 60px;
+        width: 100px;
+        border-radius: 26px;
+        border-color: white;
+        border-width: thick;
+        border-style: solid;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+.test {
+  height: 44px;
+  width: 57px;
 }

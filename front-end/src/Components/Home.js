@@ -4,10 +4,12 @@ import "../Styles/HomeCSS/hero_section.css";
 import Features from "./Features";
 import Footer from "./Footer";
 import Fade from "react-reveal/Fade";
+import Navbar from "./Navbar";
 
 function Home() {
   return (
     <Fade bottom>
+      <Navbar/>
       <div className="container">
         <div className="flex main">
           <div className="main__description">
