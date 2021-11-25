@@ -8,13 +8,15 @@ import ted from "../Images/team/ted.png";
 import github from "../Images/socials/github.svg";
 import linkedin from "../Images/socials/linkedin.svg";
 import website from "../Images/socials/website.svg";
+import email from "../Images/socials/email.svg";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import Fade from "react-reveal/Fade";
 
 function Team() {
   return (
-    <Fade bottom>
-      <Navbar/>  
+    <div>
+      <Navbar />
       <div className="container">
         <div className="grid">
           <img className="image" src={mike} alt="mike" />
@@ -24,10 +26,10 @@ function Team() {
           </div>
           <div className="info">
             <p>
-              Always looking for ways to improve my code. Love to look at code and
-              helping others with their problems, as opportunity to solve a
-              puzzle. Love to bring peoples ideas to life with programming, let’s
-              talk!
+              Always looking for ways to improve my code. Love to look at code
+              and helping others with their problems, as opportunity to solve a
+              puzzle. Love to bring peoples ideas to life with programming,
+              let’s talk!
             </p>
             <p>
               "If you want to go fast, go alone; but if you want to go far, go
@@ -51,6 +53,14 @@ function Team() {
                 </a>
                 <a
                   href="mailto:michaeldoho@hotmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={email} alt="email icon" />
+                </a>
+
+                <a
+                  href="mailto:michaeldoho@hotmail.com"
                   classname="email_link"
                   target="_blank"
                   rel="noreferrer"
@@ -69,7 +79,14 @@ function Team() {
             <p>Front End Developer</p>
           </div>
           <div className="info">
-            <p>WHAAAAT AAARREE YOOUUU DOOOING IN MY SWAAAMPPP???!!!</p>
+            <p>
+              Hi! I'm Ted, a Front End Developer. I love writing code because it
+              helps me improve my logical and analytical skills. I am a person
+              who loves to solve puzzles, constantly questioning to solve
+              problems. When I am not coding, I spend my time mostly watching
+              movies, playing video games or just surfing the net. For more
+              information about me, please visit one of my socials. See you!
+            </p>
             <div className="socials flex">
               <div className="flex">
                 <a
@@ -86,6 +103,14 @@ function Team() {
                 >
                   <img src={github} alt="github icon" />
                 </a>
+                <a
+                  href="mailto:ted23@tutanota.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={email} alt="email icon" />
+                </a>
+
                 <a
                   href="mailto:ted23@tutanota.com"
                   classname="email_link"
@@ -128,6 +153,10 @@ function Team() {
                 >
                   <img src={website} alt="computer icon" />
                 </a>
+                <a href="mailto:designs.asr@gmail.com" rel="noreferrer">
+                  <img src={email} alt="email icon" />
+                </a>
+
                 <a
                   href="mailto:designs.asr@gmail.com"
                   classname="email_link"
@@ -141,7 +170,8 @@ function Team() {
           </div>
         </div>
       </div>
-  </Fade>  
+      <Footer />
+    </div>
   );
 }
 

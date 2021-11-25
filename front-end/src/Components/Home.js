@@ -5,12 +5,12 @@ import Features from "./Features";
 import Footer from "./Footer";
 import Fade from "react-reveal/Fade";
 import Navbar from "./Navbar";
-import demoVideo from "../Images/demo.mov"
+import demoVideo from "../Images/demo.mov";
 
 function Home() {
   return (
-    <Fade bottom>
-      <Navbar/>
+    <div>
+      <Navbar />
       <div className="container">
         <div className="flex main">
           <div className="main__description">
@@ -23,15 +23,15 @@ function Home() {
               Try it!
             </a>
           </div>
-          <img src={hero_logo} alt="app" className="main__img"></img>
-          <video width="320" height="240" controls>
-            <source src={demoVideo} type="video/ogg"/>
+          {/* <img src={hero_logo} alt="app" className="main__img"></img> */}
+          <video className="main__video" controls>
+            <source src={demoVideo} type="video/ogg" />
           </video>
         </div>
         <Features />
       </div>
       <Footer />
-    </Fade>
+    </div>
   );
 }
 

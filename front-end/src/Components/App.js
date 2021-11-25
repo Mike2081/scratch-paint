@@ -5,7 +5,6 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import Navbar from "./Navbar";
 import Holder from "./Holder";
 import Home from "./Home";
 import Team from "./Team";
@@ -14,7 +13,6 @@ function App() {
   return (
     <div>
       <Router>
-        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/team" element={<Team />} />

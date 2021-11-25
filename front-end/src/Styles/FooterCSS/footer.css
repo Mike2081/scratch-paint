@@ -1,6 +1,6 @@
-.bottom img {
-  margin-top: 1.75rem;
-  margin-left: auto;
+.bottom .flex,
+.bottom hr {
+  margin-inline: 2.5rem;
 }
 
 .bottom footer {

@@ -1,7 +1,8 @@
 import React, { useRef, useState, useEffect, useCallback } from "react";
 import "../Styles/HolderCSS/Holder.css";
 import NavSideBar from "./NavSideBar";
-import downloadPhoto from "../Images/download-file.png";
+import Footer from "./Footer";
+// import downloadPhoto from "../Images/download-file.png";
 
 function Holder() {
   const colours = ["white"];
@@ -285,6 +286,7 @@ function Holder() {
         </div>
         <NavSideBar />
       </div>
+      <Footer />
     </div>
   );
 }
