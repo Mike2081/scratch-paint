@@ -13,7 +13,6 @@ Random Notes:
 - [Description](#description)
 - [How To Use](#how-to-use)
 - [References](#references)
-- [License](#license)
 - [Meet the Team](#author-info)
 
 ---
