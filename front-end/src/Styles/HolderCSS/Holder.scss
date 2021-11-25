@@ -10,6 +10,7 @@
 .holderCanvas {
   display: flex;
   flex-wrap: wrap;
+  height: 100vh;
   @media (max-width: 550px) {
     display: inline;
   }

@@ -1,7 +1,13 @@
 .main {
+  @media (max-width: 81.3125rem) {
+    flex-wrap: wrap;
+  }
   &__description {
     margin-top: 6.25rem;
     max-width: 33rem;
+    @media (max-width: 80.9375rem) {
+      margin-inline: auto;
+    }
   }
   &__title {
     width: 18.375rem;
@@ -27,7 +33,7 @@
   }
 
   &__button {
-    padding: 1.0625rem 12.5rem;
+    padding: 17px 100px;
     background: #4038ff;
     border-style: none;
     color: #fff;
@@ -38,17 +44,18 @@
     font-style: normal;
     line-height: 2.625rem;
     text-decoration: none;
-    @media (max-width: 78.6875rem) {
-      padding: 17px 100px;
-    }
   }
 
-  &__img {
+  video {
     margin-left: auto;
     margin-top: auto;
     max-width: 100%;
-    width: 48rem;
-    height: 24rem;
+    max-height: 19rem;
+
+    @media (max-width: 80.9375rem) {
+      margin-top: 2.0625rem;
+      margin-inline: auto;
+    }
   }
   @media (max-width: 61rem) {
     .container {

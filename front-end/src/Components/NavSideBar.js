@@ -10,9 +10,9 @@ function NavSideBar() {
 
   return (
     <div className="navSidebarButton">
-      {/* <Link to="#" className="menu-bars2">
+      <Link to="#" className="menu-bars2">
         <FaIcons.FaBars onClick={showSidebar} />
-      </Link> */}
+      </Link>
       <nav className={sidebar ? "nav-menu active2" : "nav-menu2"}>
         <ul className="nav-menu-items2" onClick={showSidebar}>
           <li className="navbar-toggle2">

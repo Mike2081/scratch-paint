@@ -1,13 +1,10 @@
 import "../Styles/FooterCSS/footer.css";
-import bee from "../Images/bee.png";
 import github from "../Images/socials/github.svg";
 import figma from "../Images/socials/figma.svg";
 export default function Footer() {
   return (
     <div className="bottom">
-      <img src={bee} alt="bee" />
       <hr />
-
       <footer className="flex">
         <p>© Paint Scratch Development. All rights reserved.</p>
         <a

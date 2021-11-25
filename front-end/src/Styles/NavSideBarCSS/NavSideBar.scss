@@ -1,12 +1,14 @@
 .navSidebarButton {
   height: 37px;
-  width: 23%;
+  width: 18.4375rem;
   margin-top: 4px;
   display: flex;
   justify-content: end;
 }
 
 .menu-bars2 {
+  position: absolute;
+  right: 1.25rem;
   font-size: 2rem;
   color: white;
 

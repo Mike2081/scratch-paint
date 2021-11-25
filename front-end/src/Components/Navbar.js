@@ -6,7 +6,6 @@ import SideBar from "./SideBar";
 function Navbar() {
   return (
     <div className="container flex nav">
-      <SideBar />
       <div className="navHolder__logoHolder">
         <img src={logo} className="navHolder__logoHolder__logo" alt="icon" />
         <h2 className="navHolder__logoHolder__logoTitle">Scratch Paint</h2>
@@ -37,6 +36,7 @@ function Navbar() {
           Team
         </NavLink>
       </div>
+      <SideBar />
     </div>
   );
 }

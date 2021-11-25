@@ -1,3 +1,9 @@
+img {
+  width: 100%;
+  margin-top: 1.75rem;
+  margin-left: auto;
+}
+
 .features {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
