@@ -9,6 +9,16 @@
   display: flex;
 }
 
+.holderCanvas__buttonContainer__eraserBox__eraserButtons {
+  height: 60px;
+  width: 100px;
+  border-radius: 26px;
+  border-color: white;
+  border-width: thick;
+  border-style: solid;
+  margin: 10px;
+}
+
 .holderCanvas__buttonContainer__colourBox {
   width: 490px;
 }

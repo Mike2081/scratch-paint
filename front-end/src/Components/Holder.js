@@ -144,9 +144,9 @@ function Holder() {
           <button onClick={decreaseWidth}>-</button>
         </div>
         <div className="holderCanvas__buttonContainer__eraserBox">
-          <input className="holderCanvas__buttonContainer__eraserButtons" type="color" value={pickedColor} onChange={(e) => setPickedColor(e.target.value)}/>
-          <button className="holderCanvas__buttonContainer__eraserButtons" onClick={eraser} value={pickedColor} onChange={(e) => setPickedColor(e.target.value)}>Eraser</button>
-          <button className="holderCanvas__buttonContainer__eraserButtons" onClick={clear}>Clear</button>
+          <input className="holderCanvas__buttonContainer__eraserBox__eraserButtons" type="color" value={pickedColor} onChange={(e) => setPickedColor(e.target.value)}/>
+          <button className="holderCanvas__buttonContainer__eraserBox__eraserButtons" onClick={eraser} value={pickedColor} onChange={(e) => setPickedColor(e.target.value)}>Eraser</button>
+          <button className="holderCanvas__buttonContainer__eraserBox__eraserButtons" onClick={clear}>Clear</button>
         </div>
         <div className="holderCanvas__buttonContainer__colourBox">
           <button className="holderCanvas__buttonContainer__colourBox__blue" onClick={blue} value={pickedColor} onChange={(e) => setPickedColor(e.target.value)}></button>
@@ -159,9 +159,9 @@ function Holder() {
           <button className="holderCanvas__buttonContainer__colourBox__purple" onClick={purple} value={pickedColor} onChange={(e) => setPickedColor(e.target.value)}></button>
         </div>
         <div className="holderCanvas__buttonContainer__downloadBox">
-          <button className="holderCanvas__buttonContainer__downloadBox__downloadbuttons" onClick={downloadPNG}><img src="../Images/download-file.png"/>.PNG</button>
-          <button className="holderCanvas__buttonContainer__downloadBox__downloadbuttons" onClick={downloadSVG}><img src="../Images/download-file.png"/>.SVG</button>
-          <button className="holderCanvas__buttonContainer__downloadBox__downloadbuttons" onClick={downloadJPG}><img src="../Images/download-file.png"/>.JPG</button>
+          <button className="holderCanvas__buttonContainer__downloadBox__downloadbuttons" onClick={downloadPNG}><img src="../Images/download-file.png" alt=""/>.PNG</button>
+          <button className="holderCanvas__buttonContainer__downloadBox__downloadbuttons" onClick={downloadSVG}><img src="../Images/download-file.png" alt=""/>.SVG</button>
+          <button className="holderCanvas__buttonContainer__downloadBox__downloadbuttons" onClick={downloadJPG}><img src="../Images/download-file.png" alt=""/>.JPG</button>
         </div>
       </div>
       <NavSideBar />

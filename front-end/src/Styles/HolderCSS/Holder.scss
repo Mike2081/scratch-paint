@@ -10,6 +10,13 @@
     }
     &__eraserBox {
       &__eraserButtons {
+        height: 60px;
+        width: 100px;
+        border-radius: 26px;
+        border-color: white;
+        border-width: thick;
+        border-style: solid;
+        margin: 10px;
       }
     }
     &__colourBox {
