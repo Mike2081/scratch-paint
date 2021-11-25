@@ -1,12 +1,5 @@
-@media (max-width: 81.3125rem) {
-  .main {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
 .main__description {
-  margin-top: 6.25rem;
+  margin-top: 2.25rem;
   max-width: 33rem;
 }
 

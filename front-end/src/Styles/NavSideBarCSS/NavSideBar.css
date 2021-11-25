@@ -5,9 +5,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
 }
 
 .menu-bars2 {
@@ -22,7 +19,7 @@
 }
 
 .nav-menu2 {
-  background-color: #060b26;
+  background-color: black;
   width: 250px;
   height: 120vh;
   display: -webkit-box;
@@ -31,6 +28,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 79.8%;
   z-index: 999999999;
 }
 
@@ -54,6 +54,7 @@
 .nav-menu-items2 {
   width: 100%;
   background-color: #000;
+  height: 136%;
 }
 
 .navbar-toggle2 {

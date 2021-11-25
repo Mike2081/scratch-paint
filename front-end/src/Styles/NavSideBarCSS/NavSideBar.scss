@@ -3,7 +3,6 @@
   width: 18.4375rem;
   margin-top: 4px;
   display: flex;
-  justify-content: end;
 }
 
 .menu-bars2 {
@@ -18,14 +17,14 @@
 }
 
 .nav-menu2 {
-  background-color: #060b26;
+  background-color: black;
   width: 250px;
   height: 120vh;
   display: flex;
   justify-content: center;
-  // position: absolute;
-  // top: 0;
-  // left: 79.8%; //you have to lower this when your adding width media queries
+  position: absolute;
+  top: 0;
+  left: 79.8%;
   z-index: 999999999;
 }
 
@@ -49,6 +48,7 @@
 .nav-menu-items2 {
   width: 100%;
   background-color: #000;
+  height: 136%;
 }
 
 .navbar-toggle2 {

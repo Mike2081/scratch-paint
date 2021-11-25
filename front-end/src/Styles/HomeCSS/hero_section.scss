@@ -1,9 +1,6 @@
 .main {
-  @media (max-width: 81.3125rem) {
-    flex-wrap: wrap;
-  }
   &__description {
-    margin-top: 6.25rem;
+    margin-top: 2.25rem;
     max-width: 33rem;
     @media (max-width: 80.9375rem) {
       margin-inline: auto;

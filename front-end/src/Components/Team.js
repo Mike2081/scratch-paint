@@ -11,7 +11,6 @@ import website from "../Images/socials/website.svg";
 import email from "../Images/socials/email.svg";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Fade from "react-reveal/Fade";
 
 function Team() {
   return (
