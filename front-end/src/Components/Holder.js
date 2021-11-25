@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect, useCallback } from "react";
 import "../Styles/HolderCSS/Holder.css";
 import NavSideBar from "./NavSideBar";
+import downloadPhoto from "../Images/download-file.png";
 
 function Holder() {
   const colours = ['white'];
@@ -136,15 +137,17 @@ function Holder() {
       />
       <div className="holderCanvas__buttonContainer">
         <div className="holderCanvas__buttonContainer__widthBox">
-          <span>
+          <span className="holderCanvas__buttonContainer__widthBox__widthButtonsTitle">
             Width
           </span>
-          <button onClick={increaseWidth}>+</button>
-          <button>{widthSettings}</button>
-          <button onClick={decreaseWidth}>-</button>
+          <button className="holderCanvas__buttonContainer__widthBox__widthButtons" onClick={increaseWidth}>+</button>
+          <button className="holderCanvas__buttonContainer__widthBox__widthButtons">{widthSettings}</button>
+          <button className="holderCanvas__buttonContainer__widthBox__widthButtons" onClick={decreaseWidth}>-</button>
         </div>
         <div className="holderCanvas__buttonContainer__eraserBox">
-          <input className="holderCanvas__buttonContainer__eraserBox__eraserButtons" type="color" value={pickedColor} onChange={(e) => setPickedColor(e.target.value)}/>
+          <div>
+            <input className="holderCanvas__buttonContainer__eraserBox__eraserButtons" type="color" value={pickedColor} onChange={(e) => setPickedColor(e.target.value)}/>
+          </div>
           <button className="holderCanvas__buttonContainer__eraserBox__eraserButtons" onClick={eraser} value={pickedColor} onChange={(e) => setPickedColor(e.target.value)}>Eraser</button>
           <button className="holderCanvas__buttonContainer__eraserBox__eraserButtons" onClick={clear}>Clear</button>
         </div>
@@ -159,9 +162,12 @@ function Holder() {
           <button className="holderCanvas__buttonContainer__colourBox__purple" onClick={purple} value={pickedColor} onChange={(e) => setPickedColor(e.target.value)}></button>
         </div>
         <div className="holderCanvas__buttonContainer__downloadBox">
-          <button className="holderCanvas__buttonContainer__downloadBox__downloadbuttons" onClick={downloadPNG}><img src="../Images/download-file.png" alt=""/>.PNG</button>
-          <button className="holderCanvas__buttonContainer__downloadBox__downloadbuttons" onClick={downloadSVG}><img src="../Images/download-file.png" alt=""/>.SVG</button>
-          <button className="holderCanvas__buttonContainer__downloadBox__downloadbuttons" onClick={downloadJPG}><img src="../Images/download-file.png" alt=""/>.JPG</button>
+          <button className="holderCanvas__buttonContainer__downloadBox__downloadbuttons" onClick={downloadPNG}>
+            <img className="holderCanvas__buttonContainer__downloadBox__downloadbuttons__pic" src={downloadPhoto} alt=""/>.PNG</button>
+          <button className="holderCanvas__buttonContainer__downloadBox__downloadbuttons" onClick={downloadSVG}>
+            <img className="holderCanvas__buttonContainer__downloadBox__downloadbuttons__pic" src={downloadPhoto} alt=""/>.SVG</button>
+          <button className="holderCanvas__buttonContainer__downloadBox__downloadbuttons" onClick={downloadJPG}>
+            <img className="holderCanvas__buttonContainer__downloadBox__downloadbuttons__pic" src={downloadPhoto} alt=""/>.JPG</button>
         </div>
       </div>
       <NavSideBar />

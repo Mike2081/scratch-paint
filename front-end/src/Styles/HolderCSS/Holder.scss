@@ -5,10 +5,34 @@
 
 .holderCanvas {
   display: flex;
+  @media (max-width: 550px) {
+    display: inline;
+  }
   &__buttonContainer {
     &__widthBox {
+      &__widthButtonsTitle {
+        width: 100px;
+        margin: 10px;
+        font-size: 36px;
+        font-weight: 700;
+        height: 60px;
+        width: 100px;
+        margin: 10px;
+        font-size: 35px;
+      }
+      &__widthButtons {
+        height: 60px;
+        width: 100px;
+        border-radius: 26px;
+        border-color: white;
+        border-width: thick;
+        border-style: solid;
+        margin: 10px;
+        font-size: 27px;
+      }
     }
     &__eraserBox {
+      display: flex;
       &__eraserButtons {
         height: 60px;
         width: 100px;
@@ -111,6 +135,10 @@
         border-width: thick;
         border-style: solid;
         margin: 10px;
+        &__pic {
+          max-width: 30%;
+          margin-left: 29px;
+        }
       }
     }
   }

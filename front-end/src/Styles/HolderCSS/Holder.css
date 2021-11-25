@@ -9,6 +9,40 @@
   display: flex;
 }
 
+@media (max-width: 550px) {
+  .holderCanvas {
+    display: inline;
+  }
+}
+
+.holderCanvas__buttonContainer__widthBox__widthButtonsTitle {
+  width: 100px;
+  margin: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  height: 60px;
+  width: 100px;
+  margin: 10px;
+  font-size: 35px;
+}
+
+.holderCanvas__buttonContainer__widthBox__widthButtons {
+  height: 60px;
+  width: 100px;
+  border-radius: 26px;
+  border-color: white;
+  border-width: thick;
+  border-style: solid;
+  margin: 10px;
+  font-size: 27px;
+}
+
+.holderCanvas__buttonContainer__eraserBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .holderCanvas__buttonContainer__eraserBox__eraserButtons {
   height: 60px;
   width: 100px;
@@ -119,6 +153,11 @@
   border-width: thick;
   border-style: solid;
   margin: 10px;
+}
+
+.holderCanvas__buttonContainer__downloadBox__downloadbuttons__pic {
+  max-width: 30%;
+  margin-left: 29px;
 }
 
 .test {
