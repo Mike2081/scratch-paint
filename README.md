@@ -37,7 +37,8 @@ desire.
 
 ## How To Use
 
-Use the "eraser" button to clean up your mistaskes or use the "clear" button to
+Select any of the original 8 colours. Pick any brush width of your choosing and
+use the "eraser" button to clean up your mistaskes or use the "clear" button to
 start a new master piece.
 
 If you would like to save your art click the "download" button.
