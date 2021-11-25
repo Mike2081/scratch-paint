@@ -11,7 +11,7 @@
       grid-template-columns: 1fr 3fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: "image name name" "image info info" ". . .";
+      grid-template-areas: "image name name" "image info info" ". . .";
 }
 
 .grid .image {

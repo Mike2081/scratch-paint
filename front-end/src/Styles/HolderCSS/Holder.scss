@@ -1,24 +1,29 @@
+.canvas-container {
+  max-width: 500px;
+}
 #canvas {
-  border: 6px solid dimgrey;
+  border: 1px solid dimgrey;
   background-color: white;
+  width: 100%;
 }
 
 .holderCanvas {
   display: flex;
+  flex-wrap: wrap;
   @media (max-width: 550px) {
     display: inline;
   }
   &__buttonContainer {
+    margin-left: 4rem;
+    @media (max-width: 64.6875rem) {
+      margin-left: 0;
+    }
+
     &__widthBox {
+      display: flex;
+      align-items: center;
       &__widthButtonsTitle {
-        width: 100px;
-        margin: 10px;
-        font-size: 36px;
-        font-weight: 700;
-        height: 60px;
-        width: 100px;
-        margin: 10px;
-        font-size: 35px;
+        font-weight: 500;
       }
       &__widthButtons {
         height: 60px;
@@ -34,6 +39,7 @@
     &__eraserBox {
       display: flex;
       &__eraserButtons {
+        flex-grow: 2;
         height: 60px;
         width: 100px;
         border-radius: 26px;
@@ -44,7 +50,14 @@
       }
     }
     &__colourBox {
-      width: 490px;
+      max-width: 490px;
+
+      @media (max-width: 61.5625rem) {
+        display: flex;
+        align-items: center;
+        // flex-wrap: wrap;
+      }
+
       &__blue {
         background-color: #0000ff;
         height: 60px;
@@ -127,14 +140,18 @@
       }
     }
     &__downloadBox {
+      margin: auto;
       &__downloadbuttons {
         height: 60px;
-        width: 100px;
+        width: 100%;
         border-radius: 26px;
         border-color: white;
         border-width: thick;
         border-style: solid;
-        margin: 10px;
+        margin: 0.625rem 0;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 45px;
         &__pic {
           max-width: 30%;
           margin-left: 29px;
