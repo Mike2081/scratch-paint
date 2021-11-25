@@ -5,7 +5,7 @@ import downloadPhoto from "../Images/download-file.png";
 
 function Holder() {
   const colours = ["white"];
-  const [widthSettings, setWidthSettings] = useState("");
+  const [widthSettings, setWidthSettings] = useState(1);
   const [pickedColor, setPickedColor] = useState(colours[""]);
   console.log(pickedColor);
   const canvasRef = useRef(null);
@@ -134,8 +134,8 @@ function Holder() {
         <div className="canvas-container">
           <canvas
             id="canvas"
-            // width={window.innerWidth}
-            // height={500}
+            width={500}
+            height={500}
             ref={canvasRef}
             onMouseDown={onMouseDown}
             onMouseUp={onMouseUp}
