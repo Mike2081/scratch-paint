@@ -146,11 +146,6 @@ function Holder() {
             className="holderCanvas__buttonContainer__downloadBox__downloadbuttons"
             onClick={downloadPNG}
           >
-            {/* <img
-              className="holderCanvas__buttonContainer__downloadBox__downloadbuttons__pic"
-              src={downloadPhoto}
-              alt=""
-            /> */}
             Download
           </button>
         </div>
@@ -229,12 +224,12 @@ function Holder() {
           </div>
           <div className="holderCanvas__buttonContainer__eraserBox">
             <div>
-              {/* <input
+              <input
                 className="holderCanvas__buttonContainer__eraserBox__eraserButtons"
                 type="color"
                 value={pickedColor}
                 onChange={(e) => setPickedColor(e.target.value)}
-              /> */}
+              />
             </div>
             <button
               className="holderCanvas__buttonContainer__eraserBox__eraserButtons"
