@@ -5,7 +5,7 @@ import downloadPhoto from "../Images/download-file.png";
 
 function Holder() {
   const colours = ["white"];
-  const [widthSettings, setWidthSettings] = useState(1);
+  const [widthSettings, setWidthSettings] = useState("");
   const [pickedColor, setPickedColor] = useState(colours[""]);
   console.log(pickedColor);
   const canvasRef = useRef(null);
@@ -129,152 +129,167 @@ function Holder() {
   };
 
   return (
-    <div className="holderCanvas">
-      <canvas
-        id="canvas"
-        style={{
-          border: "7px solid dimgrey",
-        }}
-        width={window.innerWidth}
-        height={window.innerHeight}
-        ref={canvasRef}
-        onMouseDown={onMouseDown}
-        onMouseUp={onMouseUp}
-        onMouseLeave={onMouseUp}
-        onMouseMove={onMouseMove}
-      />
-      {/* <div className="holderCanvas__buttonContainer">
-        <div className="holderCanvas__buttonContainer__widthBox">
-          <span className="holderCanvas__buttonContainer__widthBox__widthButtonsTitle">
-            Width
-          </span>
-          <button
-            className="holderCanvas__buttonContainer__widthBox__widthButtons"
-            onClick={increaseWidth}
-          >
-            +
-          </button>
-          <button className="holderCanvas__buttonContainer__widthBox__widthButtons">
-            {widthSettings}
-          </button>
-          <button
-            className="holderCanvas__buttonContainer__widthBox__widthButtons"
-            onClick={decreaseWidth}
-          >
-            -
-          </button>
-        </div>
-        <div className="holderCanvas__buttonContainer__eraserBox">
-          <div>
-            <input
-              className="holderCanvas__buttonContainer__eraserBox__eraserButtons"
-              type="color"
-              value={pickedColor}
-              onChange={(e) => setPickedColor(e.target.value)}
-            />
-          </div>
-          <button
-            className="holderCanvas__buttonContainer__eraserBox__eraserButtons"
-            onClick={eraser}
-            value={pickedColor}
-            onChange={(e) => setPickedColor(e.target.value)}
-          >
-            Eraser
-          </button>
-          <button
-            className="holderCanvas__buttonContainer__eraserBox__eraserButtons"
-            onClick={clear}
-          >
-            Clear
-          </button>
-        </div>
-        <div className="holderCanvas__buttonContainer__colourBox">
-          <button
-            className="holderCanvas__buttonContainer__colourBox__blue"
-            onClick={blue}
-            value={pickedColor}
-            onChange={(e) => setPickedColor(e.target.value)}
-          ></button>
-          <button
-            className="holderCanvas__buttonContainer__colourBox__white"
-            onClick={eraser}
-            value={pickedColor}
-            onChange={(e) => setPickedColor(e.target.value)}
-          ></button>
-          <button
-            className="holderCanvas__buttonContainer__colourBox__black"
-            onClick={black}
-            value={pickedColor}
-            onChange={(e) => setPickedColor(e.target.value)}
-          ></button>
-          <button
-            className="holderCanvas__buttonContainer__colourBox__red"
-            onClick={red}
-            value={pickedColor}
-            onChange={(e) => setPickedColor(e.target.value)}
-          ></button>
-          <button
-            className="holderCanvas__buttonContainer__colourBox__green"
-            onClick={green}
-            value={pickedColor}
-            onChange={(e) => setPickedColor(e.target.value)}
-          ></button>
-          <button
-            className="holderCanvas__buttonContainer__colourBox__yellow"
-            onClick={yellow}
-            value={pickedColor}
-            onChange={(e) => setPickedColor(e.target.value)}
-          ></button>
-          <button
-            className="holderCanvas__buttonContainer__colourBox__orange"
-            onClick={orange}
-            value={pickedColor}
-            onChange={(e) => setPickedColor(e.target.value)}
-          ></button>
-          <button
-            className="holderCanvas__buttonContainer__colourBox__purple"
-            onClick={purple}
-            value={pickedColor}
-            onChange={(e) => setPickedColor(e.target.value)}
-          ></button>
-        </div>
-        <div className="holderCanvas__buttonContainer__downloadBox">
+    <div>
+      <div className="holderCanvas">
+        <div className="canvas-container">
+          <canvas
+            id="canvas"
+            // width={window.innerWidth}
+            // height={500}
+            ref={canvasRef}
+            onMouseDown={onMouseDown}
+            onMouseUp={onMouseUp}
+            onMouseLeave={onMouseUp}
+            onMouseMove={onMouseMove}
+          />
           <button
             className="holderCanvas__buttonContainer__downloadBox__downloadbuttons"
             onClick={downloadPNG}
           >
-            <img
+            {/* <img
               className="holderCanvas__buttonContainer__downloadBox__downloadbuttons__pic"
               src={downloadPhoto}
               alt=""
-            />
-            .PNG
-          </button>
-          <button
-            className="holderCanvas__buttonContainer__downloadBox__downloadbuttons"
-            onClick={downloadSVG}
-          >
-            <img
-              className="holderCanvas__buttonContainer__downloadBox__downloadbuttons__pic"
-              src={downloadPhoto}
-              alt=""
-            />
-            .SVG
-          </button>
-          <button
-            className="holderCanvas__buttonContainer__downloadBox__downloadbuttons"
-            onClick={downloadJPG}
-          >
-            <img
-              className="holderCanvas__buttonContainer__downloadBox__downloadbuttons__pic"
-              src={downloadPhoto}
-              alt=""
-            />
-            .JPG
+            /> */}
+            Download
           </button>
         </div>
+
+        <div className="holderCanvas__buttonContainer">
+          <div className="holderCanvas__buttonContainer__widthBox">
+            <span className="holderCanvas__buttonContainer__widthBox__widthButtonsTitle">
+              Width
+            </span>
+            <button
+              className="holderCanvas__buttonContainer__widthBox__widthButtons"
+              onClick={increaseWidth}
+            >
+              +
+            </button>
+            <button className="holderCanvas__buttonContainer__widthBox__widthButtons">
+              {widthSettings}
+            </button>
+            <button
+              className="holderCanvas__buttonContainer__widthBox__widthButtons"
+              onClick={decreaseWidth}
+            >
+              -
+            </button>
+          </div>
+
+          <div className="holderCanvas__buttonContainer__colourBox">
+            <button
+              className="holderCanvas__buttonContainer__colourBox__blue"
+              onClick={blue}
+              value={pickedColor}
+              onChange={(e) => setPickedColor(e.target.value)}
+            ></button>
+            <button
+              className="holderCanvas__buttonContainer__colourBox__white"
+              onClick={eraser}
+              value={pickedColor}
+              onChange={(e) => setPickedColor(e.target.value)}
+            ></button>
+            <button
+              className="holderCanvas__buttonContainer__colourBox__black"
+              onClick={black}
+              value={pickedColor}
+              onChange={(e) => setPickedColor(e.target.value)}
+            ></button>
+            <button
+              className="holderCanvas__buttonContainer__colourBox__red"
+              onClick={red}
+              value={pickedColor}
+              onChange={(e) => setPickedColor(e.target.value)}
+            ></button>
+            <button
+              className="holderCanvas__buttonContainer__colourBox__green"
+              onClick={green}
+              value={pickedColor}
+              onChange={(e) => setPickedColor(e.target.value)}
+            ></button>
+            <button
+              className="holderCanvas__buttonContainer__colourBox__yellow"
+              onClick={yellow}
+              value={pickedColor}
+              onChange={(e) => setPickedColor(e.target.value)}
+            ></button>
+            <button
+              className="holderCanvas__buttonContainer__colourBox__orange"
+              onClick={orange}
+              value={pickedColor}
+              onChange={(e) => setPickedColor(e.target.value)}
+            ></button>
+            <button
+              className="holderCanvas__buttonContainer__colourBox__purple"
+              onClick={purple}
+              value={pickedColor}
+              onChange={(e) => setPickedColor(e.target.value)}
+            ></button>
+          </div>
+          <div className="holderCanvas__buttonContainer__eraserBox">
+            <div>
+              {/* <input
+                className="holderCanvas__buttonContainer__eraserBox__eraserButtons"
+                type="color"
+                value={pickedColor}
+                onChange={(e) => setPickedColor(e.target.value)}
+              /> */}
+            </div>
+            <button
+              className="holderCanvas__buttonContainer__eraserBox__eraserButtons"
+              onClick={eraser}
+              value={pickedColor}
+              onChange={(e) => setPickedColor(e.target.value)}
+            >
+              Eraser
+            </button>
+            <button
+              className="holderCanvas__buttonContainer__eraserBox__eraserButtons"
+              onClick={clear}
+            >
+              Clear
+            </button>
+          </div>
+
+          {/* <div className="holderCanvas__buttonContainer__downloadBox">
+            <button
+              className="holderCanvas__buttonContainer__downloadBox__downloadbuttons"
+              onClick={downloadPNG}
+            >
+              <img
+                className="holderCanvas__buttonContainer__downloadBox__downloadbuttons__pic"
+                src={downloadPhoto}
+                alt=""
+              />
+              .PNG
+            </button>
+            <button
+              className="holderCanvas__buttonContainer__downloadBox__downloadbuttons"
+              onClick={downloadSVG}
+            >
+              <img
+                className="holderCanvas__buttonContainer__downloadBox__downloadbuttons__pic"
+                src={downloadPhoto}
+                alt=""
+              />
+              .SVG
+            </button>
+            <button
+              className="holderCanvas__buttonContainer__downloadBox__downloadbuttons"
+              onClick={downloadJPG}
+            >
+              <img
+                className="holderCanvas__buttonContainer__downloadBox__downloadbuttons__pic"
+                src={downloadPhoto}
+                alt=""
+              />
+              .JPG
+            </button>
+          </div> */}
+        </div>
+        <NavSideBar />
       </div>
-      <NavSideBar /> */}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 .navSidebarButton {
   height: 37px;
-  width: 44%;
+  width: 23%;
   margin-top: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,9 +29,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 79.8%;
   z-index: 999999999;
 }
 

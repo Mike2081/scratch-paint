@@ -1,6 +1,6 @@
 .navSidebarButton {
   height: 37px;
-  width: 44%;
+  width: 23%;
   margin-top: 4px;
   display: flex;
   justify-content: end;
@@ -21,9 +21,9 @@
   height: 120vh;
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 79.8%; //you have to lower this when your adding width media queries
+  // position: absolute;
+  // top: 0;
+  // left: 79.8%; //you have to lower this when your adding width media queries
   z-index: 999999999;
 }
 
