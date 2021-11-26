@@ -85,7 +85,7 @@ cd npm start
 ## Figma Design Layout
 
 - Layout:
-  [Figma](https://www.figma.com/file/2addoOozsjdlIPIuFgsrst/Hackathon?node-id=0%)
+  [Figma](https://www.figma.com/file/2addoOozsjdlIPIuFgsrst/Hackathon?node-id=0%3A1)
 
 ---
 
