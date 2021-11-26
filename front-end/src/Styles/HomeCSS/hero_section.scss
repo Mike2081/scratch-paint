@@ -1,4 +1,7 @@
 .main {
+  @media (max-width: 63rem) {
+    display: block;
+  }
   &__description {
     margin-top: 2.25rem;
     max-width: 33rem;

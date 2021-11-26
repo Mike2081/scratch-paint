@@ -1,3 +1,9 @@
+@media (max-width: 63rem) {
+  .main {
+    display: block;
+  }
+}
+
 .main__description {
   margin-top: 2.25rem;
   max-width: 33rem;
