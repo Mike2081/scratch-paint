@@ -129,7 +129,6 @@ function Holder() {
           </button>
         </div>
         <div className="bugContainer">
-          <NavSideBar />
           <div className="holderCanvas__buttonContainer">
             <div className="holderCanvas__buttonContainer__widthBox">
               <span className="holderCanvas__buttonContainer__widthBox__widthButtonsTitle">
