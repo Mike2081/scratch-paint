@@ -226,6 +226,7 @@ function Holder() {
               </button>
             </div>
           </div>
+          <NavSideBar/>
         </div>
       </div>
     </div>

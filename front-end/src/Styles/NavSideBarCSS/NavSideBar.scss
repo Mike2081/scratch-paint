@@ -7,24 +7,34 @@
 
 .menu-bars2 {
   position: absolute;
-  right: 1.25rem;
+  right: 4.25rem;
   font-size: 2rem;
   color: white;
-
-  &__exit2 {
-    margin-left: 1.25rem;
+  top: 1px;
+}
+@media (max-width: 38rem) {
+  .menu-bars2 {
+    right: 4.25rem;
+    font-size: 2rem;
+    color: white;
+    position: static;
   }
 }
-
+@media (max-width: 71rem) {
+  .menu-bars2 {
+    position: relative;
+    right: 0rem;
+  }
+}
 .nav-menu2 {
   background-color: black;
   width: 250px;
-  height: 120vh;
+  height: 73.5vh;
   display: flex;
   justify-content: center;
   position: absolute;
   top: 0;
-  left: 79.8%;
+  left: calc(95% - 163px);
   z-index: 999999999;
 }
 
@@ -66,5 +76,12 @@ span2 {
   line-height: 3rem;
   &:hover {
     font-weight: 500;
+  }
+}
+
+.bugContainer {
+  display: inline;
+  @media (max-width: 35rem) {
+    display: block;
   }
 }
